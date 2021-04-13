@@ -9,6 +9,8 @@ class Tweeter
 : public Person
 {
 private:
+	static int gid;
+	int id;
 	std::string twitterHandle;
 
 public:
