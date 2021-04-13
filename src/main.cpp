@@ -10,7 +10,8 @@ int main() {
 	Person peter("Peter", "Lustig");
 	Person otto("Otto", "Waalkes");
 	Tweeter tweety("Tweety", "McPeep", "@tmp");
+	Tweeter djt("Donald", "John", "Trump", "@realdonaldtrump");
 
-	cout << peter << endl << otto << endl << tweety << endl;
+	cout << peter << endl << otto << endl << tweety << endl << djt << endl;
 	return 0;
 }

@@ -9,8 +9,13 @@
 using std::string;
 using std::ostream;
 
+Person::Person (string pFirstName, string pMiddleName, string pLastName)
+: firstName(pFirstName), middleName(pMiddleName), lastName(pLastName)
+{
+}
+
 Person::Person (string pFirstName, string pLastName)
-: firstName(pFirstName), lastName(pLastName)
+: firstName(pFirstName), middleName(""), lastName(pLastName)
 {
 }
 
@@ -36,7 +41,10 @@ void Person::setLastName (string pLastName)
 
 string Person::toString () const
 {
-	return firstName + " " + lastName;
+	if (middleName == "")
+		return firstName + " " + lastName;
+
+	return firstName + " " + middleName + " " + lastName;
 }
 
 ostream& operator<< (ostream& target, Person const & source)

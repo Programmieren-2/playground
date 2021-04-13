@@ -7,10 +7,12 @@
 class Person {
 private:
 	std::string firstName;
+	std::string middleName;
 	std::string lastName;
 
 public:
 	Person() = default;
+	Person (std::string pFirstName, std::string pMiddleName, std::string pLastName);
 	Person (std::string pFirstName, std::string pLastName);
 
 	std::string getFirstName();

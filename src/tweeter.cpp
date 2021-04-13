@@ -8,8 +8,13 @@
 using std::ostream;
 using std::string;
 
+Tweeter::Tweeter(string pFirstName, string pMiddleName, string pLastName, string pTwitterHandle)
+: Person(pFirstName, pMiddleName, pLastName), twitterHandle(pTwitterHandle)
+{
+}
+
 Tweeter::Tweeter(string pFirstName, string pLastName, string pTwitterHandle)
-: Person(pFirstName, pLastName), twitterHandle(pTwitterHandle)
+: Tweeter(pFirstName, "", pLastName, pTwitterHandle)
 {
 }
 
