@@ -13,12 +13,12 @@ Tweeter::Tweeter(string pFirstName, string pLastName, string pTwitterHandle)
 {
 }
 
-string Tweeter::toString()
+string Tweeter::toString() const
 {
 	return Person::toString() + " (" + twitterHandle + ")";
 }
 
-ostream& operator<< (ostream& target, Tweeter& source)
+ostream& operator<< (ostream& target, Tweeter const & source)
 {
     target << source.toString();
     return target;

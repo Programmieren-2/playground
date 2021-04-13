@@ -15,11 +15,11 @@ public:
 
 	std::string getFirstName();
 	void setFirstName(std::string pFirstName);
-	std::string getLastName();
+	std::string getLastName() const;
 	void setLastName(std::string pLastName);
-	std::string toString();
+	std::string toString() const;
 
-	friend std::ostream& operator<<(std::ostream& target, Person& person);
+	friend std::ostream& operator<<(std::ostream& target, Person const & person);
 };
 
 #endif

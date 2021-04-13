@@ -13,8 +13,8 @@ private:
 
 public:
 	Tweeter(std::string pFirstName, std::string pLastName, std::string pTwitterHandle);
-	std::string toString();
-	friend std::ostream& operator<< (std::ostream& target, Tweeter& source);
+	std::string toString() const;
+	friend std::ostream& operator<< (std::ostream& target, Tweeter const & source);
 };
 
 #endif

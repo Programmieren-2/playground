@@ -24,7 +24,7 @@ void Person::setFirstName (string pFirstName)
 	firstName = pFirstName;
 }
 
-string Person::getLastName ()
+string Person::getLastName () const
 {
 	return lastName;
 }
@@ -34,12 +34,12 @@ void Person::setLastName (string pLastName)
 	lastName = pLastName;
 }
 
-string Person::toString ()
+string Person::toString () const
 {
 	return firstName + " " + lastName;
 }
 
-ostream& operator<< (ostream& target, Person& source)
+ostream& operator<< (ostream& target, Person const & source)
 {
     target << source.toString();
     return target;
