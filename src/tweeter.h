@@ -16,8 +16,8 @@ private:
 public:
 	Tweeter(std::string pFirstName, std::string pMiddleName, std::string pLastName, std::string pTwitterHandle);
 	Tweeter(std::string pFirstName, std::string pLastName, std::string pTwitterHandle);
-	std::string toString() const;
-	friend std::ostream& operator<< (std::ostream& target, Tweeter const & source);
+
+	virtual void print(std::ostream& target = std::cout) const override;
 };
 
 #endif

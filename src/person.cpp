@@ -49,18 +49,20 @@ void Person::setLastName (string pLastName)
 	lastName = pLastName;
 }
 
-string Person::toString () const
+void Person::print(ostream& target) const
 {
-	if (middleName == "")
-		return firstName + " " + lastName;
+	target << firstName << " ";
 
-	return firstName + " " + middleName + " " + lastName;
+	if (middleName != "")
+		target << middleName << " ";
+
+	target << lastName;
 }
 
-ostream& operator<< (ostream& target, Person const & source)
+ostream& operator<<(ostream& target, Person const& person)
 {
-    target << source.toString();
-    return target;
+	person.print(target);
+	return target;
 }
 
 #endif

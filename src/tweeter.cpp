@@ -22,15 +22,11 @@ Tweeter::Tweeter(string pFirstName, string pLastName, string pTwitterHandle)
 {
 }
 
-string Tweeter::toString() const
+void Tweeter::print(ostream& target) const
 {
-	return "[" + to_string(id) + "] " + Person::toString() + " (" + twitterHandle + ")";
-}
-
-ostream& operator<< (ostream& target, Tweeter const & source)
-{
-    target << source.toString();
-    return target;
+	target << "[" << to_string(id) << "] ";
+	Person::print(target);
+	target <<  " (" << twitterHandle << ")";
 }
 
 #endif

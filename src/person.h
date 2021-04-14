@@ -14,6 +14,7 @@ public:
 	Person() = default;
 	Person (std::string pFirstName, std::string pMiddleName, std::string pLastName);
 	Person (std::string pFirstName, std::string pLastName);
+	virtual ~Person() = default;
 
 	std::string getFirstName() const;
 	void setFirstName(std::string pFirstName);
@@ -21,9 +22,10 @@ public:
 	void setMiddleName(std::string pMiddleName);
 	std::string getLastName() const;
 	void setLastName(std::string pLastName);
-	std::string toString() const;
 
-	friend std::ostream& operator<<(std::ostream& target, Person const & person);
+	virtual void print(std::ostream& target = std::cout) const;
+
+	friend std::ostream& operator<<(std::ostream& target, Person const& person);
 };
 
 #endif
