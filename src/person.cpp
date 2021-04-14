@@ -29,6 +29,16 @@ void Person::setFirstName (string pFirstName)
 	firstName = pFirstName;
 }
 
+string Person::getMiddleName () const
+{
+	return middleName;
+}
+
+void Person::setMiddleName (string pMiddleName)
+{
+	middleName = pMiddleName;
+}
+
 string Person::getLastName () const
 {
 	return lastName;

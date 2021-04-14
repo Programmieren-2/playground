@@ -17,6 +17,8 @@ public:
 
 	std::string getFirstName() const;
 	void setFirstName(std::string pFirstName);
+	std::string getMiddleName() const;
+	void setMiddleName(std::string pMiddleName);
 	std::string getLastName() const;
 	void setLastName(std::string pLastName);
 	std::string toString() const;
