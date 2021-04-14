@@ -12,8 +12,8 @@ private:
 
 public:
 	Person() = default;
-	Person (std::string pFirstName, std::string pMiddleName, std::string pLastName);
-	Person (std::string pFirstName, std::string pLastName);
+	Person(std::string pFirstName, std::string pMiddleName, std::string pLastName);
+	Person(std::string pFirstName, std::string pLastName);
 	virtual ~Person() = default;
 
 	std::string getFirstName() const;
