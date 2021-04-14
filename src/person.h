@@ -15,7 +15,7 @@ public:
 	Person (std::string pFirstName, std::string pMiddleName, std::string pLastName);
 	Person (std::string pFirstName, std::string pLastName);
 
-	std::string getFirstName();
+	std::string getFirstName() const;
 	void setFirstName(std::string pFirstName);
 	std::string getLastName() const;
 	void setLastName(std::string pLastName);

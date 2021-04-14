@@ -19,7 +19,7 @@ Person::Person (string pFirstName, string pLastName)
 {
 }
 
-string Person::getFirstName ()
+string Person::getFirstName () const
 {
 	return firstName;
 }
