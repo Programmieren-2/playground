@@ -1,13 +1,13 @@
-klassen_sources = [
+playground_sources = [
   'person.cpp',
   'tweeter.cpp',
   'main.cpp',
 ]
 
-klassen_deps = [
+playground_deps = [
 ]
 
-executable('klassen', klassen_sources,
-  dependencies: klassen_deps,
+executable('playground', playground_sources,
+  dependencies: playground_deps,
   install: true,
 )
