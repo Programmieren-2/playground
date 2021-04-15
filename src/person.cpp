@@ -59,6 +59,14 @@ void Person::print(ostream& target) const
 	target << lastName;
 }
 
+bool Person::operator<(Person const& other)
+{
+	if (lastName == other.lastName)
+		return firstName < other.getFirstName();
+
+	return lastName < other.getLastName();
+}
+
 ostream& operator<<(ostream& target, Person const& person)
 {
 	person.print(target);
