@@ -1,4 +1,3 @@
-#include <iostream>
 #include <thread>
 #include <vector>
 
@@ -6,8 +5,6 @@
 #include "person.h"
 #include "tweeter.h"
 
-using std::cout;
-using std::endl;
 using std::thread;
 using std::vector;
 
