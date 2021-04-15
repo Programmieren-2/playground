@@ -5,6 +5,7 @@ playground_sources = [
 ]
 
 playground_deps = [
+  dependency('threads'),
 ]
 
 executable('playground', playground_sources,
