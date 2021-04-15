@@ -67,6 +67,15 @@ bool Person::operator<(Person const& other)
 	return lastName < other.getLastName();
 }
 
+bool Person::operator==(Person const& other)
+{
+	return (
+		firstName == other.getFirstName()
+		&& middleName == other.getMiddleName()
+		&& lastName == other.getLastName()
+	);
+}
+
 ostream& operator<<(ostream& target, Person const& person)
 {
 	person.print(target);
