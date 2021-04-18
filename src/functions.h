@@ -5,7 +5,7 @@
 #include <string>
 #include <vector>
 
-template <class Streamable>
+template <typename Streamable>
 void printall(std::vector<Streamable>& items, std::string sep = "\n")
 {
 	for (Streamable item : items)
