@@ -1,6 +1,7 @@
 playground_sources = [
   'person.cpp',
   'tweeter.cpp',
+  'musician.cpp',
   'main.cpp',
 ]
 
