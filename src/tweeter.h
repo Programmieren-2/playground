@@ -18,6 +18,8 @@ namespace prog2 {
 		Tweeter(std::string firstName, std::string middleName, std::string lastName, std::string twitterHandle);
 		Tweeter(std::string firstName, std::string lastName, std::string twitterHandle);
 
+		bool operator<(Tweeter const& other);
+		bool operator==(Tweeter const& other);
 		virtual void print(std::ostream& target = std::cout) const override;
 	};
 }

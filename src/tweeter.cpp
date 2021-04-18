@@ -27,3 +27,13 @@ void Tweeter::print(ostream& target) const
 	Person::print(target);
 	target <<  " (" << twitterHandle << ")";
 }
+
+bool Tweeter::operator<(Tweeter const& other)
+{
+	return id < other.id;
+}
+
+bool Tweeter::operator==(Tweeter const& other)
+{
+	return id == other.id;
+}
