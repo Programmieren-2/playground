@@ -16,8 +16,8 @@ int main() {
 	Tweeter djt("Donald", "John", "Trump", "@realdonaldtrump");
 	Tweeter katy("Katy", "Perry", "@katyperry");
 
-	vector<Person> persons = {peter, otto, julie};
-	vector<Tweeter> tweeters = {tweety, djt, katy};
+	vector persons = {peter, otto, julie};
+	vector tweeters = {tweety, djt, katy};
 
 	auto sortPersonsCallback = [&persons](){sort(persons.begin(), persons.end());};
 	auto sortTweetersCallback = [&tweeters](){sort(tweeters.begin(), tweeters.end());};
@@ -28,8 +28,8 @@ int main() {
 	sortPersons.join();
 	sortTweeters.join();
 
-	printall<Person>(persons);
-	printall<Tweeter>(tweeters);
+	printall(persons);
+	printall(tweeters);
 
 	return 0;
 }
