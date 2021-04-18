@@ -6,13 +6,13 @@
 using std::string;
 using std::ostream;
 
-Person::Person(string pFirstName, string pMiddleName, string pLastName)
-: firstName(pFirstName), middleName(pMiddleName), lastName(pLastName)
+Person::Person(string firstName, string middleName, string lastName)
+: firstName(firstName), middleName(middleName), lastName(lastName)
 {
 }
 
-Person::Person(string pFirstName, string pLastName)
-: firstName(pFirstName), middleName(""), lastName(pLastName)
+Person::Person(string firstName, string lastName)
+: firstName(firstName), middleName(""), lastName(lastName)
 {
 }
 
@@ -21,9 +21,9 @@ string Person::getFirstName() const
 	return firstName;
 }
 
-void Person::setFirstName(string pFirstName)
+void Person::setFirstName(string firstName)
 {
-	firstName = pFirstName;
+	this->firstName = firstName;
 }
 
 string Person::getMiddleName() const
@@ -31,9 +31,9 @@ string Person::getMiddleName() const
 	return middleName;
 }
 
-void Person::setMiddleName(string pMiddleName)
+void Person::setMiddleName(string middleName)
 {
-	middleName = pMiddleName;
+	this->middleName = middleName;
 }
 
 string Person::getLastName() const
@@ -41,9 +41,9 @@ string Person::getLastName() const
 	return lastName;
 }
 
-void Person::setLastName(string pLastName)
+void Person::setLastName(string lastName)
 {
-	lastName = pLastName;
+	this->lastName = lastName;
 }
 
 void Person::print(ostream& target) const

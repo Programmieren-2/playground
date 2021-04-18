@@ -14,8 +14,8 @@ private:
 	std::string twitterHandle;
 
 public:
-	Tweeter(std::string pFirstName, std::string pMiddleName, std::string pLastName, std::string pTwitterHandle);
-	Tweeter(std::string pFirstName, std::string pLastName, std::string pTwitterHandle);
+	Tweeter(std::string firstName, std::string middleName, std::string lastName, std::string twitterHandle);
+	Tweeter(std::string firstName, std::string lastName, std::string twitterHandle);
 
 	virtual void print(std::ostream& target = std::cout) const override;
 };

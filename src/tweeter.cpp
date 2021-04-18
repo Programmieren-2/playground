@@ -8,14 +8,14 @@ using std::to_string;
 
 int Tweeter::gid = 0;
 
-Tweeter::Tweeter(string pFirstName, string pMiddleName, string pLastName, string pTwitterHandle)
-: Person(pFirstName, pMiddleName, pLastName), id(gid), twitterHandle(pTwitterHandle)
+Tweeter::Tweeter(string firstName, string middleName, string lastName, string twitterHandle)
+: Person(firstName, middleName, lastName), id(gid), twitterHandle(twitterHandle)
 {
 	gid++;
 }
 
-Tweeter::Tweeter(string pFirstName, string pLastName, string pTwitterHandle)
-: Tweeter(pFirstName, "", pLastName, pTwitterHandle)
+Tweeter::Tweeter(string firstName, string lastName, string twitterHandle)
+: Tweeter(firstName, "", lastName, twitterHandle)
 {
 }
 
