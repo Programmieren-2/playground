@@ -19,11 +19,8 @@ int main() {
 	vector persons = {peter, otto, julie};
 	vector tweeters = {tweety, djt, katy};
 
-	auto sortPersonsCallback = [&persons](){sort(persons.begin(), persons.end());};
-	auto sortTweetersCallback = [&tweeters](){sort(tweeters.begin(), tweeters.end());};
-
-	thread sortPersons(sortPersonsCallback);
-	thread sortTweeters(sortTweetersCallback);
+	thread sortPersons(getSorter(persons));
+	thread sortTweeters(getSorter(tweeters));
 
 	sortPersons.join();
 	sortTweeters.join();

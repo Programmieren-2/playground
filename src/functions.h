@@ -12,4 +12,11 @@ void printall(std::vector<Streamable>& items, std::string sep = "\n")
 		std::cout << item << sep;
 }
 
+template <typename Sortable>
+auto getSorter(std::vector<Sortable>& items)
+{
+	return [&items](){sort(items.begin(), items.end());};
+}
+
 #endif
+
