@@ -21,4 +21,3 @@ namespace prog2 {
 }
 
 #endif
-
