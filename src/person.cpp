@@ -5,6 +5,7 @@
 
 using std::string;
 using std::ostream;
+using prog2::Person;
 
 Person::Person(string firstName, string middleName, string lastName)
 : firstName(firstName), middleName(middleName), lastName(lastName)
@@ -73,7 +74,7 @@ bool Person::operator==(Person const& other)
 	);
 }
 
-ostream& operator<<(ostream& target, Person const& person)
+ostream& prog2::operator<<(ostream& target, Person const& person)
 {
 	person.print(target);
 	return target;

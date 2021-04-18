@@ -9,6 +9,8 @@ using std::thread;
 using std::vector;
 using prog2::getSorter;
 using prog2::printall;
+using prog2::Person;
+using prog2::Tweeter;
 
 int main() {
 	Person peter("Peter", "Lustig");

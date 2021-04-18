@@ -5,6 +5,8 @@
 using std::ostream;
 using std::string;
 using std::to_string;
+using prog2::Person;
+using prog2::Tweeter;
 
 int Tweeter::gid = 0;
 
