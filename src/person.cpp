@@ -1,6 +1,3 @@
-#ifndef __person__
-#define __person__
-
 #include <iostream>
 #include <string>
 
@@ -81,5 +78,3 @@ ostream& operator<<(ostream& target, Person const& person)
 	person.print(target);
 	return target;
 }
-
-#endif

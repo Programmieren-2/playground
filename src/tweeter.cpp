@@ -1,6 +1,3 @@
-#ifndef __tweeter__
-#define __tweeter__
-
 #include <iostream>
 
 #include "tweeter.h"
@@ -28,5 +25,3 @@ void Tweeter::print(ostream& target) const
 	Person::print(target);
 	target <<  " (" << twitterHandle << ")";
 }
-
-#endif
