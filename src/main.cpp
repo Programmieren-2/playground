@@ -37,9 +37,9 @@ int main() {
 	sortMusicians.join();
 	sortTweeters.join();
 
-	printall(persons);
-	printall(musicians);
-	printall(tweeters);
+	printall("Persons", persons);
+	printall("Musicians", musicians);
+	printall("Tweeters", tweeters);
 
 	return 0;
 }
