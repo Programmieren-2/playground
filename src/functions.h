@@ -13,6 +13,13 @@ namespace prog2 {
 			std::cout << item << sep;
 	}
 
+	template <typename Streamable>
+	void printall(std::string caption, std::vector<Streamable>& items, std::string sep = "\n")
+	{
+		std::cout << "### " << caption << " ###" << sep;
+		printall(items, sep);
+	}
+
 	template <typename Sortable>
 	auto getSorter(std::vector<Sortable>& items)
 	{
