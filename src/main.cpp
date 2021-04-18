@@ -7,6 +7,8 @@
 
 using std::thread;
 using std::vector;
+using prog2::getSorter;
+using prog2::printall;
 
 int main() {
 	Person peter("Peter", "Lustig");
