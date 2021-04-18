@@ -7,8 +7,11 @@
 
 namespace prog2 {
 	template <typename Streamable>
-	void printall(std::vector<Streamable>& items, std::string sep = "\n")
+	void printall(std::vector<Streamable>& items, std::string sep = "\n", std::string caption = "")
 	{
+		if (caption != "")
+			std::cout << "###" << caption << "###" << sep;
+
 		for (Streamable item : items)
 			std::cout << item << sep;
 	}
