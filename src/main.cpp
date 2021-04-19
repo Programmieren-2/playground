@@ -18,15 +18,15 @@ int main() {
 	Person pl("Peter", "Lustig");
 	Person ow("Otto", "Waalkes");
 	Person ae("Anke", "Engelke");
+	Musician ar("Arthur", "Rubinstein", "piano");
 	Musician jf("Julie", "Fowlis", "vocals");
 	Musician kg("Kinga", "Głyk", "bass");
-	Musician ar("Arthur", "Rubinstein", "piano");
 	Tweeter tmp("Tweety", "McPeep", "@tmp");
 	Tweeter djt("Donald", "John", "Trump", "@realdonaldtrump");
 	Tweeter kp("Katy", "Perry", "@katyperry");
 
 	vector persons = {pl, ow, ae};
-	vector musicians = {jf, kg, ar};
+	vector musicians = {ar, jf, kg};
 	vector tweeters = {tmp, djt, kp};
 
 	thread sortPersons(getSorter(persons));
