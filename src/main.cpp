@@ -15,9 +15,9 @@ using prog2::Musician;
 using prog2::Tweeter;
 
 int main() {
-	Person pl("Peter", "Lustig");
-	Person ow("Otto", "Waalkes");
-	Person ae("Anke", "Engelke");
+	Person aew("Armin", "Eckhard", "Maiwald", 81);
+	Person ogw("Otto", "Gerhard", "Waalkes", 72);
+	Person ae("Anke", "Engelke", 55);
 	Musician ar("Arthur", "Rubinstein", "piano");
 	Musician jf("Julie", "Fowlis", "vocals");
 	Musician kg("Kinga", "Głyk", "bass");
@@ -25,7 +25,7 @@ int main() {
 	Tweeter djt("Donald", "John", "Trump", "@realdonaldtrump");
 	Tweeter kp("Katy", "Perry", "@katyperry");
 
-	vector persons = {pl, ow, ae};
+	vector persons = {aew, ogw, ae};
 	vector musicians = {ar, jf, kg};
 	vector tweeters = {tmp, djt, kp};
 
