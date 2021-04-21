@@ -57,6 +57,16 @@ void Person::setLastName(string lastName)
 	this->lastName = lastName;
 }
 
+int Person::getAge()
+{
+	return age;
+}
+
+void Person::setAge(int age)
+{
+	this->age = age;
+}
+
 void Person::print(ostream& target) const
 {
 	target << firstName << " ";

@@ -26,6 +26,8 @@ namespace prog2 {
 		void setMiddleName(std::string middleName);
 		std::string getLastName() const;
 		void setLastName(std::string lastName);
+		int getAge();
+		void setAge(int age);
 
 		virtual void print(std::ostream& target = std::cout) const;
 		bool operator<(Person const& other);
