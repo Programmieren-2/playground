@@ -30,9 +30,9 @@ namespace prog2 {
 		void setAge(int age);
 
 		virtual void print(std::ostream& target = std::cout) const;
+
 		bool operator<(Person const& other);
 		bool operator==(Person const& other);
-
 		friend std::ostream& operator<<(std::ostream& target, Person const& person);
 	};
 
