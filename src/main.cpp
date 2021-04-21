@@ -18,9 +18,11 @@ int main() {
 	Person *aew = new Person("Armin", "Eckhard", "Maiwald", 81);
 	Person *ogw = new Person("Otto", "Gerhard", "Waalkes", 72);
 	Person *ae = new Person("Anke", "Engelke", 55);
+
 	Musician *ar = new Musician("Arthur", "Rubinstein", "piano");
 	Musician *jf = new Musician("Julie", "Fowlis", "vocals");
 	Musician *kg = new Musician("Kinga", "Głyk", "bass");
+
 	Tweeter *tmp = new Tweeter("Tweety", "McPeep", "@tmp");
 	Tweeter *djt = new Tweeter("Donald", "John", "Trump", "@realdonaldtrump");
 	Tweeter *kp = new Tweeter("Katy", "Perry", "@katyperry");
