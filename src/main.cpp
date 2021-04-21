@@ -15,19 +15,19 @@ using prog2::Musician;
 using prog2::Tweeter;
 
 int main() {
-	Person aew("Armin", "Eckhard", "Maiwald", 81);
-	Person ogw("Otto", "Gerhard", "Waalkes", 72);
-	Person ae("Anke", "Engelke", 55);
-	Musician ar("Arthur", "Rubinstein", "piano");
-	Musician jf("Julie", "Fowlis", "vocals");
-	Musician kg("Kinga", "Głyk", "bass");
-	Tweeter tmp("Tweety", "McPeep", "@tmp");
-	Tweeter djt("Donald", "John", "Trump", "@realdonaldtrump");
-	Tweeter kp("Katy", "Perry", "@katyperry");
+	Person *aew = new Person("Armin", "Eckhard", "Maiwald", 81);
+	Person *ogw = new Person("Otto", "Gerhard", "Waalkes", 72);
+	Person *ae = new Person("Anke", "Engelke", 55);
+	Musician *ar = new Musician("Arthur", "Rubinstein", "piano");
+	Musician *jf = new Musician("Julie", "Fowlis", "vocals");
+	Musician *kg = new Musician("Kinga", "Głyk", "bass");
+	Tweeter *tmp = new Tweeter("Tweety", "McPeep", "@tmp");
+	Tweeter *djt = new Tweeter("Donald", "John", "Trump", "@realdonaldtrump");
+	Tweeter *kp = new Tweeter("Katy", "Perry", "@katyperry");
 
-	vector persons = {aew, ogw, ae};
-	vector musicians = {ar, jf, kg};
-	vector tweeters = {tmp, djt, kp};
+	vector persons = {*aew, *ogw, *ae};
+	vector musicians = {*ar, *jf, *kg};
+	vector tweeters = {*tmp, *djt, *kp};
 
 	thread sortPersons(getSorter(persons));
 	thread sortMusicians(getSorter(musicians));
