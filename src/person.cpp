@@ -7,13 +7,23 @@ using std::string;
 using std::ostream;
 using prog2::Person;
 
+Person::Person(string firstName, string middleName, string lastName, int age)
+: firstName(firstName), middleName(middleName), lastName(lastName), age(age)
+{
+}
+
+Person::Person(string firstName, string lastName, int age)
+: Person(firstName, "", lastName, age)
+{
+}
+
 Person::Person(string firstName, string middleName, string lastName)
-: firstName(firstName), middleName(middleName), lastName(lastName)
+: Person(firstName, middleName, lastName, 0)
 {
 }
 
 Person::Person(string firstName, string lastName)
-: firstName(firstName), middleName(""), lastName(lastName)
+: Person(firstName, "", lastName)
 {
 }
 
@@ -55,6 +65,9 @@ void Person::print(ostream& target) const
 		target << middleName << " ";
 
 	target << lastName;
+
+	if (age)
+		target << " (" << age << ")";
 }
 
 bool Person::operator<(Person const& other)

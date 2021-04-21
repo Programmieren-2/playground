@@ -10,9 +10,12 @@ namespace prog2 {
 		std::string firstName;
 		std::string middleName;
 		std::string lastName;
+		int age;
 
 	public:
 		Person() = default;
+		Person(std::string firstName, std::string middleName, std::string lastName, int age);
+		Person(std::string firstName, std::string lastName, int age);
 		Person(std::string firstName, std::string middleName, std::string lastName);
 		Person(std::string firstName, std::string lastName);
 		virtual ~Person() = default;
